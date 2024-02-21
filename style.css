@@ -1,0 +1,56 @@
+body{
+    background-color: beige;
+}
+.personal-info {
+    float: left; /* Float the section to the left */
+    width: 300px; /* Limit the width of the section */
+    margin-bottom: 20px; /* Add some margin to separate from other content */
+    background-color: rgb(111, 65, 203);
+}
+
+.personal-info section {
+    margin-bottom: 20px; /* Example margin */
+    display: inline-block;
+    width: 100%;
+}
+
+.personal-info section h1,
+.personal-info section h2,
+.personal-info section h3 {
+    border-bottom: 2px solid #000; /* Add a solid black bottom border */
+    display: inline-block;
+}
+
+.personal-info section img {
+    width: 20px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; 
+}
+
+.container {
+    position: relative;
+    left: 280px;
+    bottom: 820px;
+    justify-content: flex-start; /* Adjust as needed */
+    align-items: flex-start;
+    flex: 1 0 300px;
+    margin-right: 20px;
+}
+
+.container section {
+    flex: 1 0 300px;
+    width: 500px;
+    margin-left: 20px; /* Adjust as needed */
+    background-color: beige;
+}
+@media only screen and (min-width: 768px - 1000px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .personal-info,
+    .container section {
+        margin-right: 0;
+    }
+}
+
